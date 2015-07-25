@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ZuLiangNews</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="news_item">
+        <item>热点</item>
+        <item>社会</item>
+        <item>娱乐</item>
+        <item>财经</item>
+        <item>科技</item>
+        <item>汽车</item>
+        <item>体育</item>
+    </string-array>
+</resources>

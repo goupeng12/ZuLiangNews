@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_drawerlayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/main_toolbar"/>
+            <include layout="@layout/main_tablayout"/>
+        </android.support.design.widget.AppBarLayout>
+
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:id="@+id/main_coordinatorlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <app.zuliangwang.zuliangnews.view.MainViewPager
+                android:id="@+id/main_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </app.zuliangwang.zuliangnews.view.MainViewPager>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/main_floating_button"
+                android:layout_gravity="bottom|end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:background="@color/material_blue_grey_800"
+        android:layout_gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Test22222"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
